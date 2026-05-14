@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Alexandria Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Particles Background -->
+  <div id="particles" class="particles-container"></div>
+
+  <!-- Wave Background -->
+  <div class="wave-container">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">&#9875;</div>
+        Alexandria Guide
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="tour-planner.html">Tour Planner</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" onclick="ThemeManager.toggle()" aria-label="Toggle dark mode">
+          <span class="icon-sun">&#9728;</span>
+          <span class="icon-moon">&#9790;</span>
+        </button>
+        <div id="auth-container">
+          <a href="login.html" class="btn-auth btn-auth-login">Login</a>
+          <a href="register.html" class="btn-auth btn-auth-register">Register</a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div style="padding-top: 100px;"></div>
+
+  <section class="section" style="padding-top: 40px;">
+    <div class="section-header reveal">
+      <span class="section-label">Get in Touch</span>
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-subtitle">Have questions about Alexandria? Want to partner with us? We'd love to hear from you.</p>
+    </div>
+
+    <div class="form-container reveal">
+      <div id="form-success" class="form-success">Message sent successfully!</div>
+      <form id="contact-form" action="../php/contact.php" method="POST">
+        <div class="form-group">
+          <label class="form-label" for="name">Full Name</label>
+          <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name" required>
+          <div class="form-error">Name is required</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email Address</label>
+          <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email address" required>
+          <div class="form-error">Email is required</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea id="message" name="message" class="form-input" placeholder="Tell us about your inquiry or feedback..." required></textarea>
+          <div class="form-error">Message is required</div>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info Cards -->
+    <div class="cards-grid" style="max-width: 900px; margin-top: 60px;">
+      <div class="card reveal" style="text-align: center; padding: 32px;">
+        <div style="font-size: 2rem; margin-bottom: 12px;">&#128205;</div>
+        <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 8px; color: var(--text-primary);">Location</h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary);">Alexandria, Egypt<br>Mediterranean Coast</p>
+      </div>
+      <div class="card reveal" style="text-align: center; padding: 32px;">
+        <div style="font-size: 2rem; margin-bottom: 12px;">&#128231;</div>
+        <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 8px; color: var(--text-primary);">Email</h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary);">hello@alexandriaguide.com<br>support@alexandriaguide.com</p>
+      </div>
+      <div class="card reveal" style="text-align: center; padding: 32px;">
+        <div style="font-size: 2rem; margin-bottom: 12px;">&#128222;</div>
+        <h4 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 8px; color: var(--text-primary);">Phone</h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary);">+20 3 123 4567<br>+20 3 987 6543</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <a href="../index.html" class="footer-brand">
+          <div class="logo-icon">&#9875;</div>
+          Alexandria Guide
+        </a>
+        <p class="footer-desc">Your premium companion for exploring Alexandria, Egypt.</p>
+      </div>
+      <div>
+        <h4 class="footer-title">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="places.html">Famous Places</a></li>
+          <li><a href="tour-planner.html">Tour Planner</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Company</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Connect</h4>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Twitter">t</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="YouTube">y</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Alexandria Guide. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/contact.js"></script>
+</body>
+</html>

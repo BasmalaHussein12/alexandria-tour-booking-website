@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Planner - Alexandria Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Particles Background -->
+  <div id="particles" class="particles-container"></div>
+
+  <!-- Wave Background -->
+  <div class="wave-container">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">&#9875;</div>
+        Alexandria Guide
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="tour-planner.html" class="active">Tour Planner</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" onclick="ThemeManager.toggle()" aria-label="Toggle dark mode">
+          <span class="icon-sun">&#9728;</span>
+          <span class="icon-moon">&#9790;</span>
+        </button>
+        <div id="auth-container">
+          <a href="login.html" class="btn-auth btn-auth-login">Login</a>
+          <a href="register.html" class="btn-auth btn-auth-register">Register</a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div style="padding-top: 100px;"></div>
+
+  <section class="section" style="padding-top: 40px;">
+    <div class="section-header reveal">
+      <span class="section-label">Interactive</span>
+      <h2 class="section-title">Tour Planner</h2>
+      <p class="section-subtitle">Build your personalized Alexandria itinerary. Add places, organize your trip, and explore at your own pace.</p>
+    </div>
+
+    <div class="planner-container">
+      <!-- Places List -->
+      <div class="places-list">
+        <div class="planner-card reveal">
+          <img src="../images/bibliotheca.jpg" alt="Bibliotheca Alexandrina">
+          <div class="planner-card-body">
+            <h4 class="planner-card-title">Bibliotheca Alexandrina</h4>
+            <div class="planner-card-location">
+              <span>&#128205;</span> Alexandria, Egypt
+            </div>
+            <button class="planner-card-btn planner-add-btn" 
+              data-place-id="bibliotheca"
+              data-place-name="Bibliotheca Alexandrina"
+              data-place-image="../images/bibliotheca.jpg">
+              Add to Tour
+            </button>
+          </div>
+        </div>
+
+        <div class="planner-card reveal">
+          <img src="../images/qaitbay.jpg" alt="Qaitbay Citadel">
+          <div class="planner-card-body">
+            <h4 class="planner-card-title">Qaitbay Citadel</h4>
+            <div class="planner-card-location">
+              <span>&#128205;</span> Eastern Harbour
+            </div>
+            <button class="planner-card-btn planner-add-btn" 
+              data-place-id="qaitbay"
+              data-place-name="Qaitbay Citadel"
+              data-place-image="../images/qaitbay.jpg">
+              Add to Tour
+            </button>
+          </div>
+        </div>
+
+        <div class="planner-card reveal">
+          <img src="../images/montaza.jpg" alt="Montaza Palace">
+          <div class="planner-card-body">
+            <h4 class="planner-card-title">Montaza Palace</h4>
+            <div class="planner-card-location">
+              <span>&#128205;</span> Montaza District
+            </div>
+            <button class="planner-card-btn planner-add-btn" 
+              data-place-id="montaza"
+              data-place-name="Montaza Palace"
+              data-place-image="../images/montaza.jpg">
+              Add to Tour
+            </button>
+          </div>
+        </div>
+
+        <div class="planner-card reveal">
+          <img src="../images/corniche.jpg" alt="Alexandria Corniche">
+          <div class="planner-card-body">
+            <h4 class="planner-card-title">Alexandria Corniche</h4>
+            <div class="planner-card-location">
+              <span>&#128205;</span> Alexandria Coastline
+            </div>
+            <button class="planner-card-btn planner-add-btn" 
+              data-place-id="corniche"
+              data-place-name="Alexandria Corniche"
+              data-place-image="../images/corniche.jpg">
+              Add to Tour
+            </button>
+          </div>
+        </div>
+
+        <div class="planner-card reveal">
+          <img src="../images/gallery-1.jpg" alt="Roman Amphitheater">
+          <div class="planner-card-body">
+            <h4 class="planner-card-title">Roman Amphitheater</h4>
+            <div class="planner-card-location">
+              <span>&#128205;</span> Kom El-Dikka
+            </div>
+            <button class="planner-card-btn planner-add-btn" 
+              data-place-id="amphitheater"
+              data-place-name="Roman Amphitheater"
+              data-place-image="../images/gallery-1.jpg">
+              Add to Tour
+            </button>
+          </div>
+        </div>
+
+        <div class="planner-card reveal">
+          <img src="../images/gallery-5.jpg" alt="Pompey's Pillar">
+          <div class="planner-card-body">
+            <h4 class="planner-card-title">Pompey's Pillar</h4>
+            <div class="planner-card-location">
+              <span>&#128205;</span> Alexandria Center
+            </div>
+            <button class="planner-card-btn planner-add-btn" 
+              data-place-id="pompey"
+              data-place-name="Pompey's Pillar"
+              data-place-image="../images/gallery-5.jpg">
+              Add to Tour
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="planner-sidebar reveal">
+        <div class="planner-sidebar-header">
+          <h3 class="planner-sidebar-title">My Tour</h3>
+          <div class="planner-count" id="planner-count">0</div>
+        </div>
+        <div class="planner-items" id="planner-items">
+          <div class="planner-empty">
+            <div class="planner-empty-icon">&#128739;</div>
+            <p>Start building your dream tour!<br>Add places from the list.</p>
+          </div>
+        </div>
+        <div class="planner-actions">
+          <button class="btn-reset" id="planner-reset">Reset</button>
+          <button class="btn-save" id="planner-save">Save Tour</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <a href="../index.html" class="footer-brand">
+          <div class="logo-icon">&#9875;</div>
+          Alexandria Guide
+        </a>
+        <p class="footer-desc">Your premium companion for exploring Alexandria, Egypt.</p>
+      </div>
+      <div>
+        <h4 class="footer-title">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="places.html">Famous Places</a></li>
+          <li><a href="tour-planner.html">Tour Planner</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Company</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Connect</h4>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Twitter">t</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="YouTube">y</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Alexandria Guide. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/tour-planner.js"></script>
+</body>
+</html>

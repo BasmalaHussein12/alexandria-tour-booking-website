@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Alexandria Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Particles Background -->
+  <div id="particles" class="particles-container"></div>
+
+  <!-- Wave Background -->
+  <div class="wave-container">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">&#9875;</div>
+        Alexandria Guide
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="tour-planner.html">Tour Planner</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" onclick="ThemeManager.toggle()" aria-label="Toggle dark mode">
+          <span class="icon-sun">&#9728;</span>
+          <span class="icon-moon">&#9790;</span>
+        </button>
+        <div id="auth-container">
+          <a href="login.html" class="btn-auth btn-auth-login">Login</a>
+          <a href="register.html" class="btn-auth btn-auth-register">Register</a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div style="padding-top: 100px;"></div>
+
+  <section class="section" style="padding-top: 40px;">
+    <div class="section-header reveal">
+      <span class="section-label">Visual Journey</span>
+      <h2 class="section-title">Photo Gallery</h2>
+      <p class="section-subtitle">Experience the beauty of Alexandria through stunning photographs of its landmarks, coast, and culture.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item reveal">
+        <img src="../images/bibliotheca.jpg" alt="Bibliotheca Alexandrina at sunset">
+        <div class="gallery-overlay">
+          <h4>Bibliotheca Alexandrina</h4>
+          <p>The modern library reflecting in its pool</p>
+        </div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="../images/qaitbay.jpg" alt="Qaitbay Citadel on the Mediterranean">
+        <div class="gallery-overlay">
+          <h4>Qaitbay Citadel</h4>
+          <p>The historic fortress standing guard</p>
+        </div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="../images/montaza.jpg" alt="Montaza Palace gardens">
+        <div class="gallery-overlay">
+          <h4>Montaza Palace</h4>
+          <p>Royal elegance by the sea</p>
+        </div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="../images/corniche.jpg" alt="Alexandria Corniche sunset">
+        <div class="gallery-overlay">
+          <h4>Alexandria Corniche</h4>
+          <p>The beloved waterfront promenade</p>
+        </div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="../images/gallery-1.jpg" alt="Roman Amphitheater">
+        <div class="gallery-overlay">
+          <h4>Roman Amphitheater</h4>
+          <p>Ancient stone theater ruins</p>
+        </div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="../images/gallery-2.jpg" alt="Traditional fishing boats">
+        <div class="gallery-overlay">
+          <h4>Traditional Boats</h4>
+          <p>Colorful boats at Alexandria harbor</p>
+        </div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="../images/gallery-3.jpg" alt="Stanley Bridge at night">
+        <div class="gallery-overlay">
+          <h4>Stanley Bridge</h4>
+          <p>Illuminated bridge at blue hour</p>
+        </div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="../images/gallery-4.jpg" alt="Catacombs of Kom El Shoqafa">
+        <div class="gallery-overlay">
+          <h4>Catacombs</h4>
+          <p>Kom El Shoqafa underground site</p>
+        </div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="../images/gallery-5.jpg" alt="Pompey's Pillar">
+        <div class="gallery-overlay">
+          <h4>Pompey's Pillar</h4>
+          <p>Ancient red granite column</p>
+        </div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="../images/gallery-6.jpg" alt="Royal Jewelry Museum">
+        <div class="gallery-overlay">
+          <h4>Royal Jewelry Museum</h4>
+          <p>Elegant palace museum interior</p>
+        </div>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="../images/hero-bg.jpg" alt="Alexandria aerial view">
+        <div class="gallery-overlay">
+          <h4>Alexandria Skyline</h4>
+          <p>Aerial view of the coastal city</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <a href="../index.html" class="footer-brand">
+          <div class="logo-icon">&#9875;</div>
+          Alexandria Guide
+        </a>
+        <p class="footer-desc">Your premium companion for exploring Alexandria, Egypt.</p>
+      </div>
+      <div>
+        <h4 class="footer-title">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="places.html">Famous Places</a></li>
+          <li><a href="tour-planner.html">Tour Planner</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Company</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Connect</h4>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Twitter">t</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="YouTube">y</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Alexandria Guide. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

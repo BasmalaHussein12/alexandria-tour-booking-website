@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Places - Alexandria Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Particles Background -->
+  <div id="particles" class="particles-container"></div>
+
+  <!-- Wave Background -->
+  <div class="wave-container">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">&#9875;</div>
+        Alexandria Guide
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="places.html" class="active">Places</a></li>
+        <li><a href="tour-planner.html">Tour Planner</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" onclick="ThemeManager.toggle()" aria-label="Toggle dark mode">
+          <span class="icon-sun">&#9728;</span>
+          <span class="icon-moon">&#9790;</span>
+        </button>
+        <div id="auth-container">
+          <a href="login.html" class="btn-auth btn-auth-login">Login</a>
+          <a href="register.html" class="btn-auth btn-auth-register">Register</a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Places Navigation Anchor -->
+  <div style="padding-top: 100px;"></div>
+
+  <section class="section" style="padding-top: 40px;">
+    <div class="section-header reveal">
+      <span class="section-label">Explore</span>
+      <h2 class="section-title">Famous Places</h2>
+      <p class="section-subtitle">Discover the most iconic landmarks that define Alexandria's rich heritage and beauty.</p>
+    </div>
+
+    <!-- Quick Navigation -->
+    <div style="max-width: 800px; margin: 0 auto 60px; text-align: center;" class="reveal">
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="#bibliotheca" class="btn-secondary" style="padding: 10px 20px; font-size: 0.85rem;">Bibliotheca</a>
+        <a href="#qaitbay" class="btn-secondary" style="padding: 10px 20px; font-size: 0.85rem;">Qaitbay Citadel</a>
+        <a href="#montaza" class="btn-secondary" style="padding: 10px 20px; font-size: 0.85rem;">Montaza Palace</a>
+        <a href="#corniche" class="btn-secondary" style="padding: 10px 20px; font-size: 0.85rem;">Corniche</a>
+      </div>
+    </div>
+
+    <!-- Bibliotheca Alexandrina -->
+    <div id="bibliotheca" class="place-card reveal">
+      <div class="place-card-image">
+        <img src="../images/bibliotheca.jpg" alt="Bibliotheca Alexandrina">
+      </div>
+      <div class="place-card-content">
+        <h3 class="place-card-title">Bibliotheca Alexandrina</h3>
+        <p class="place-card-desc">The Bibliotheca Alexandrina is a major library and cultural center located on the shore of the Mediterranean Sea. It is both a commemoration of the Library of Alexandria that was lost in antiquity, and an attempt to rekindle something of the brilliance that this earlier center of study and erudition represented. The library features a reading room that covers 20,000 square meters across eleven cascading levels, and shelf space for eight million books.</p>
+        <div class="place-card-meta">
+          <span>&#128205; Alexandria, Egypt</span>
+          <span>&#9200; Open 10AM - 7PM</span>
+          <span>&#9733; 4.9 Rating</span>
+        </div>
+        <a href="tour-planner.html" class="btn-primary" style="width: fit-content; padding: 12px 24px; font-size: 0.9rem;">
+          Add to Tour
+        </a>
+      </div>
+    </div>
+
+    <!-- Qaitbay Citadel -->
+    <div id="qaitbay" class="place-card reveal">
+      <div class="place-card-image">
+        <img src="../images/qaitbay.jpg" alt="Qaitbay Citadel">
+      </div>
+      <div class="place-card-content">
+        <h3 class="place-card-title">Qaitbay Citadel</h3>
+        <p class="place-card-desc">The Citadel of Qaitbay is a 15th-century defensive fortress located on the Mediterranean sea coast. It was established in 1477 AD by Sultan Al-Ashraf Sayf al-Din Qait Bay. The Citadel is situated on the eastern side of the northern tip of Pharos Island at the mouth of the Eastern Harbour. It was built on the exact site of the famous Lighthouse of Alexandria, which was one of the Seven Wonders of the Ancient World.</p>
+        <div class="place-card-meta">
+          <span>&#128205; Eastern Harbour, Alexandria</span>
+          <span>&#9200; Open 9AM - 5PM</span>
+          <span>&#9733; 4.8 Rating</span>
+        </div>
+        <a href="tour-planner.html" class="btn-primary" style="width: fit-content; padding: 12px 24px; font-size: 0.9rem;">
+          Add to Tour
+        </a>
+      </div>
+    </div>
+
+    <!-- Montaza Palace -->
+    <div id="montaza" class="place-card reveal">
+      <div class="place-card-image">
+        <img src="../images/montaza.jpg" alt="Montaza Palace">
+      </div>
+      <div class="place-card-content">
+        <h3 class="place-card-title">Montaza Palace</h3>
+        <p class="place-card-desc">Montaza Palace is a palace and extensive gardens in the Montaza district of Alexandria. It was built as a hunting lodge in 1892 by Khedive Abbas II, the last Muhammad Ali Dynasty ruler to hold the Khedive title. The palace and its gardens cover an area of over 350 acres, featuring beautiful beaches, lush gardens, and a unique blend of Turkish and Florentine architectural styles. The Salamlek Palace now serves as a museum.</p>
+        <div class="place-card-meta">
+          <span>&#128205; Montaza District, Alexandria</span>
+          <span>&#9200; Open 8AM - 6PM</span>
+          <span>&#9733; 4.7 Rating</span>
+        </div>
+        <a href="tour-planner.html" class="btn-primary" style="width: fit-content; padding: 12px 24px; font-size: 0.9rem;">
+          Add to Tour
+        </a>
+      </div>
+    </div>
+
+    <!-- Alexandria Corniche -->
+    <div id="corniche" class="place-card reveal">
+      <div class="place-card-image">
+        <img src="../images/corniche.jpg" alt="Alexandria Corniche">
+      </div>
+      <div class="place-card-content">
+        <h3 class="place-card-title">Alexandria Corniche</h3>
+        <p class="place-card-desc">The Alexandria Corniche is the iconic waterfront promenade that stretches along the Mediterranean coast of Alexandria. It is one of the most beloved public spaces in Egypt, offering stunning sea views, fresh Mediterranean breezes, and a vibrant atmosphere. The Corniche connects many of Alexandria's famous landmarks, including the Citadel of Qaitbay, the Bibliotheca Alexandrina, and Stanley Bridge. It's the perfect place for evening walks.</p>
+        <div class="place-card-meta">
+          <span>&#128205; Alexandria Coastline</span>
+          <span>&#9200; Open 24 Hours</span>
+          <span>&#9733; 4.8 Rating</span>
+        </div>
+        <a href="tour-planner.html" class="btn-primary" style="width: fit-content; padding: 12px 24px; font-size: 0.9rem;">
+          Add to Tour
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <a href="../index.html" class="footer-brand">
+          <div class="logo-icon">&#9875;</div>
+          Alexandria Guide
+        </a>
+        <p class="footer-desc">Your premium companion for exploring Alexandria, Egypt.</p>
+      </div>
+      <div>
+        <h4 class="footer-title">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="places.html">Famous Places</a></li>
+          <li><a href="tour-planner.html">Tour Planner</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Company</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Connect</h4>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Twitter">t</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="YouTube">y</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Alexandria Guide. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
